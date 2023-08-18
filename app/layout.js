@@ -1,4 +1,5 @@
 import './globals.css'
+// import navbar from './(components)/navbar/navbar.js'
 import 'bootstrap/dist/css/bootstrap.min.css'
 // import 'bootstrap/dist/js/bootstrap.bundle'
 import { Inter } from 'next/font/google'
@@ -13,7 +14,9 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={inter.className}>
+        {/* <navbar/> */}
+        {children}</body>
     </html>
   )
 }
